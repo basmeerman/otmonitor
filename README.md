@@ -14,11 +14,11 @@ Build instructions: http://otgw.tclcode.com/otmonsrc.html
 * otmonitor in /opt/otmonitor
 * make sure to chmod 755 otmonitor and build.sh
 * make sure to have ./kit/runtime symbolic link to ./kit/tclkit
-* build otmonitor by executing build.sh
+* build otmonitor by executing sudo ./build.sh
 * create otmonitor configfile /opt/otmonitor/otmonitor.conf
 * make sure to install otmonitor as a system service 
-   * copy ./initd/otmonitor to /etc/init.d/
-   * chmod 755 /etc/init.d/otmonitor
+   * sudo cp ./initd/otmonitor /etc/init.d/
+   * sudo chmod 755 /etc/init.d/otmonitor
    * sudo update-rc.d otmonitor defaults  
    * sudo reboot
    * verify working systemctl status otmonitor
