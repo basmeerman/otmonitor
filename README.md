@@ -12,9 +12,10 @@ Build instructions: http://otgw.tclcode.com/otmonsrc.html
 ## Environment settings
 * running Raspian headless
 * otmonitor in /opt/otmonitor
-* otmonitor configfile /opt/otmonitor/otmonitor.conf
 * make sure to chmod 755 otmonitor and build.sh
 * make sure to have ./kit/runtime symbolic link to ./kit/tclkit
+* build otmonitor by executing build.sh
+* create otmonitor configfile /opt/otmonitor/otmonitor.conf
 * make sure to install otmonitor as a system service 
    * copy ./initd/otmonitor to /etc/init.d/
    * chmod 755 /etc/init.d/otmonitor
